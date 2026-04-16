@@ -341,6 +341,52 @@ N 2320 -260 2320 -250 {
 lab=DISCH}
 N 2390 -410 2550 -410 {
 lab=OUT}
+N 300 -650 320 -650 {
+lab=VDD}
+N 300 -690 300 -650 {
+lab=VDD}
+N 300 -690 320 -690 {
+lab=VDD}
+N 650 -650 670 -650 {
+lab=VDD}
+N 670 -700 670 -650 {
+lab=VDD}
+N 650 -700 670 -700 {
+lab=VDD}
+N 790 -650 820 -650 {
+lab=VDD}
+N 820 -690 820 -650 {
+lab=VDD}
+N 790 -690 820 -690 {
+lab=VDD}
+N 900 -630 920 -630 {
+lab=VSS}
+N 900 -630 900 -140 {
+lab=VSS}
+N 900 -230 920 -230 {
+lab=VSS}
+N 900 -390 920 -390 {
+lab=VSS}
+N 730 -350 770 -350 {
+lab=VSS}
+N 730 -350 730 -140 {
+lab=VSS}
+N 1130 -230 1150 -230 {
+lab=VSS}
+N 1130 -230 1130 -140 {
+lab=VSS}
+N 1320 -230 1340 -230 {
+lab=VSS}
+N 1340 -230 1340 -140 {
+lab=VSS}
+N 1150 -330 1170 -330 {
+lab=#net9}
+N 1170 -360 1170 -330 {
+lab=#net9}
+N 1300 -330 1320 -330 {
+lab=#net9}
+N 1300 -360 1300 -330 {
+lab=#net9}
 C {devices/iopin.sym} 140 -770 2 0 {name=p1 lab=VDD}
 C {devices/iopin.sym} 160 -140 2 0 {name=p2 lab=VSS}
 C {devices/iopin.sym} 2550 -260 2 1 {name=p3 lab=DISCH}
@@ -350,24 +396,6 @@ C {devices/iopin.sym} 160 -290 2 0 {name=p6 lab=TRIG}
 C {devices/iopin.sym} 160 -490 2 0 {name=p7 lab=NRESET
 }
 C {devices/iopin.sym} 2550 -410 0 0 {name=p8 lab=OUT}
-C {sky130_fd_pr/res_iso_pw.sym} 940 -630 0 0 {name=R1
-W=2.65
-L=2.65
-model=res_iso_pw
-spiceprefix=X
- mult=1}
-C {sky130_fd_pr/res_iso_pw.sym} 940 -390 0 0 {name=R2
-W=2.65
-L=2.65
-model=res_iso_pw
-spiceprefix=X
- mult=1}
-C {sky130_fd_pr/res_iso_pw.sym} 940 -230 0 0 {name=R3
-W=2.65
-L=2.65
-model=res_iso_pw
-spiceprefix=X
- mult=1}
 C {sky130_fd_pr/nfet_01v8.sym} 770 -220 0 0 {name=M2
 L=2
 W=20  
@@ -397,32 +425,26 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 340 -650 0 1 {name=M5
-L=0.15
-W=1
+L=2
+W=20  
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 630 -650 0 0 {name=M6
-L=0.15
-W=1
+L=2
+W=20  
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 770 -650 0 0 {name=M7
-L=0.15
-W=1
+L=2
+W=20  
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/res_iso_pw.sym} 790 -350 0 0 {name=R4
-W=2.65
-L=2.65
-model=res_iso_pw
-spiceprefix=X
- mult=1}
 C {sky130_fd_pr/nfet_01v8.sym} 1170 -230 0 1 {name=M8
 L=2
 W=20  
@@ -438,50 +460,50 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1130 -330 0 0 {name=M10
-L=0.15
-W=1
+L=2
+W=20  
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1340 -330 0 1 {name=M11
-L=0.15
-W=1
+L=2
+W=20  
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1210 -670 0 0 {name=M12
-L=0.15
-W=1
+L=2
+W=20  
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1400 -530 0 0 {name=M13
-L=0.15
-W=1
+L=2
+W=20  
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1610 -530 0 1 {name=M14
-L=0.15
-W=1
+L=2
+W=20  
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1690 -670 0 0 {name=M15
-L=0.15
-W=1
+L=2
+W=20
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1890 -670 0 0 {name=M16
-L=0.15
-W=1
+L=2
+W=20  
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
@@ -529,8 +551,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 2190 -480 0 0 {name=M23
-L=0.15
-W=1
+L=2
+W=20  
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
@@ -543,8 +565,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 2370 -480 0 0 {name=M25
-L=0.15
-W=1
+L=2
+W=20  
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
@@ -552,7 +574,31 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8.sym} 2300 -220 0 0 {name=M26
 L=2
 W=20  
-nf=1 mult=1
+nf=1 mult=10
 model=nfet_01v8
 spiceprefix=X
 }
+C {sky130_fd_pr/res_high_po_2p85.sym} 790 -350 0 0 {name=R14
+
+L=2.85
+model=res_high_po_2p85
+spiceprefix=X
+ mult=1}
+C {sky130_fd_pr/res_high_po_2p85.sym} 940 -390 0 0 {name=R2
+
+L=2.85
+model=res_high_po_2p85
+spiceprefix=X
+ mult=1}
+C {sky130_fd_pr/res_high_po_2p85.sym} 940 -630 0 0 {name=R1
+
+L=2.85
+model=res_high_po_2p85
+spiceprefix=X
+ mult=1}
+C {sky130_fd_pr/res_high_po_2p85.sym} 940 -230 0 0 {name=R3
+
+L=2.85
+model=res_high_po_2p85
+spiceprefix=X
+ mult=1}
